@@ -3,28 +3,36 @@ using namespace std;
 
 int main()
 {
-    int menu;
-    
-    while(true)
-    
-        {
-            cout <<  "1) 시작  2) 종료 : ";
-            cin >> menu;
-    
-            if(menu == 1)
-            {
-                cout << "start" << endl;
-                
-            }
-            else if(menu == 2)
-            {
-                cout << "terminate" << endl;
-                break;
-            }
-            
-        }
+    int x;
+    int y;
 
+    cout << " x 좌표를 입력하시오. : ";
+    cin >> x;
+
+    cout << " y 좌표를 입력하시오. : ";
+    cin >> y;
+
+
+    if( x > 0 && y > 0)
+        {
+            cout << "1사분면에 위치합니다.";
+        }    
+    else if( x < 0 && y > 0 )
+        {
+            cout << "2사분면에 위치합니다.";
+        }
+    else if ( x < 0 && y < 0)
+        {
+            cout << "3사분면에 위치합니다.";
+        }
+    else
+        {
+            cout << "4사분면에 위치합니다.";
+        }
+    
     return 0;
+    
+  
 
 }
 
